@@ -1,0 +1,12 @@
+# Server configurations
+server:
+  host: "192.168.0.109"
+  port: 3306
+  protocol: "http"
+
+# Database credentials
+database:
+  host: "localhost"
+  database: "limsabc"
+  username: "root"
+  pass: "Lims!234"

@@ -17,7 +17,8 @@
         :key="task.title"
         @click="task.done = !task.done"
         :class="{ 'done bg-blue-1': task.done }"
-        clickable>
+        clickable
+      >
         <q-item-section avatar>
           <q-checkbox
             v-model="task.done"
@@ -53,7 +54,9 @@ export default {
   data() {
     return {
       newTask: "",
-tasks: [
+      submitted:false,
+
+     tasks: [
         {
           title: "Get bananas",
           done: false
@@ -66,8 +69,7 @@ tasks: [
           title: "Poo bananas",
           done: false
         }
-      ],
-      submitted:false
+      ]
     };
   },
   methods: {
@@ -84,6 +86,7 @@ tasks: [
           this.$q.notify("Task deleted");
         });
     },
+
     addTask() {
       this.tasks.push({
         title: this.newTask,
@@ -93,12 +96,6 @@ tasks: [
       this.submitted = true;
       this.newTask = "";
 
-      this.$http
-        .post("https://bboysclujfb1.firebaseio.com/tasks.json", this.tasks)
-        .then(function(data) {
-          console.log(data);
-          this.submitted = true;
-        });
     }
   }
 };

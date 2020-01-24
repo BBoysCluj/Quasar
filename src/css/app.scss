@@ -1,1 +1,19 @@
 // app global css in SCSS form
+.header-image {
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    filter: grayscale(100%);
+  }
+  .single-blog {
+    padding: 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    background: rgb(238, 238, 238);
+  }
+  .action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}

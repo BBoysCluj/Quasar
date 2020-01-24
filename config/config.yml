@@ -1,0 +1,13 @@
+# Server configurations
+server:
+  host: "192.168.0.109"
+  port: 8899
+  protocol: "http"
+
+# Database credentials
+database:
+  host: "104.154.42.232"
+  database: "test"
+  user: "root"
+  pass: "Lims!234"
+  port: 3306
