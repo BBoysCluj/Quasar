@@ -1,0 +1,33 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-myapp-dev-172317-authRole",
+            "UnauthRoleArn": "arn:aws:iam::755197631769:role/amplify-myapp-dev-172317-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::755197631769:role/amplify-myapp-dev-172317-authRole",
+            "Region": "eu-central-1",
+            "DeploymentBucketName": "amplify-myapp-dev-172317-deployment",
+            "UnauthRoleName": "amplify-myapp-dev-172317-unauthRole",
+            "StackName": "amplify-myapp-dev-172317",
+            "StackId": "arn:aws:cloudformation:eu-central-1:755197631769:stack/amplify-myapp-dev-172317/70b4f570-3ebd-11ea-a634-06566fed0c82",
+            "AmplifyAppId": "d2hdhob18l0wzu"
+        }
+    },
+    "hosting": {
+        "S3AndCloudFront": {
+            "service": "S3AndCloudFront",
+            "providerPlugin": "awscloudformation",
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-myapp-dev-172317-deployment/amplify-cfn-templates/hosting/template.json",
+                "logicalId": "hostingS3AndCloudFront"
+            },
+            "lastPushTimeStamp": "2020-01-24T16:26:05.035Z",
+            "output": {
+                "S3BucketSecureURL": "https://ypp-20200124174604-hostingbucket-dev.s3.amazonaws.com",
+                "WebsiteURL": "http://ypp-20200124174604-hostingbucket-dev.s3-website.eu-central-1.amazonaws.com",
+                "Region": "eu-central-1",
+                "HostingBucketName": "ypp-20200124174604-hostingbucket-dev"
+            },
+            "lastPushDirHash": "xBCnmU9eIruPFUMSmCa/d9WBbbc="
+        }
+    }
+}
