@@ -37,6 +37,5 @@ yarn-error.log*
 src/statics/icons/
 babel.config.js
 package-lock.json
-quasar.conf.js
 src/boot/.gitkeep
 
